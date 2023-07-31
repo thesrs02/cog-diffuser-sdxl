@@ -1,0 +1,18 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.11.1"
+  python_packages:
+    - "torchsde"
+    - "diffusers==0.18.2"
+    - "torch==2.0.1"
+    - "ftfy==6.1.1"
+    - "scipy==1.11.1"
+    - "transformers"
+    - "accelerate"
+    - "huggingface-hub==0.16.4"
+    - "safetensors"
+    - "compel"
+    - "invisible_watermark"
+
+predict: "predict.py:Predictor"
